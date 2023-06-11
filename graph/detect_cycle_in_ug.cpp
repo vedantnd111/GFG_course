@@ -29,8 +29,10 @@ bool detect_cycle(vector<vector<int>> adj)
     vector<bool> visited(n, false);
     for (int i = 0; i < n; i++)
     {
+        if(visited[i] == false) {
         bool temp = dfs(adj, visited, i, -1);
         if(temp) return true;
+        }
     }
     return false;
 }
