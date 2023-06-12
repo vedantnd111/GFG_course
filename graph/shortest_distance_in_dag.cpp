@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Time complexity: O(V+E)
+// Space complexity: O(V) [distance array and topologicalSort array]
+
 // Find shortest distance in directed acyclic graph (DAG)
 // This solution is done using topological sort, for details regarding it refer topological_sort.cpp and topological_sort_using_dfs.cpp
 
